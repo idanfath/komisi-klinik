@@ -39,7 +39,7 @@
   const { elementX: card2X, elementY: card2Y, elementHeight: card2H, elementWidth: card2W, isOutside: card2S } = useMouseInElement(card2R)
   const ct_card2 = computed(() => { return ct_construct(card2X, card2Y, card2H, card2W, card2S, 2) })
   const cl_card2 = computed(() => { return cl_construt(card2X, card2Y, card2H, card2W, card2S, 10, 'rgba(55, 55, 55, 0.5)') })
-  
+
   const card3R = ref(null)
   const { elementX: card3X, elementY: card3Y, elementHeight: card3H, elementWidth: card3W, isOutside: card3S } = useMouseInElement(card3R)
   const ct_card3 = computed(() => { return ct_construct(card3X, card3Y, card3H, card3W, card3S, 2) })
@@ -135,16 +135,17 @@
       </div>
       <div class="sc-container">
         <div>
-          <q-btn label="See More" no-caps outline size="xl" square class="q-py-sm q-px-xl animated-btn my-buttonx" ref="but2R"
-            :style="{transform: ct_but2}" :ripple="false"></q-btn>
+          <q-btn label="See More" no-caps outline size="xl" square class="q-py-sm q-px-xl animated-btn my-buttonx"
+            ref="but2R" :style="{transform: ct_but2}" :ripple="false"></q-btn>
         </div>
       </div>
     </div>
 
-    <div id="doctors-home" class="home-doctors text-white" :style="{'background': 'url(' + require('@/assets/doctors.png') + ')'}">
+    <div id="doctors-home" class="home-doctors text-white"
+      :style="{'background': 'url(' + require('@/assets/doctors.png') + ')'}">
 
 
-      <div class="sc-container" style="z-index: 3;" >
+      <div class="sc-container" style="z-index: 3;">
         <div class="sc-titles non-selectable ">
           <div class="panimated sc-t-c sc-t-c-2">
             <div class="text-italic sc-b-1 mc">
@@ -162,7 +163,10 @@
       </div>
     </div>
   </main>
+
+  
 </template>
+
 
 
 
@@ -257,4 +261,3 @@
     }
   }
 </script>
-

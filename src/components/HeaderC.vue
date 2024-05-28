@@ -1,6 +1,6 @@
 <template>
-  <q-header v-model="header" flat class="bg-black ">
-    <q-toolbar class="bg-black text-white q-px-lg">
+  <q-header v-model="header" flat class="bg-black font-inria-sans">
+    <q-toolbar class="bg-transparent text-white q-px-lg">
         <img :src="logoSrc" class="mc header-icon non-selectable cursor-pointer" @click="$router.push({name:'home'})"
           alt="Skyn Gym's Logo">
       <q-space />
