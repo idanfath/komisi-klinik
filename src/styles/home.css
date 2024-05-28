@@ -1,0 +1,236 @@
+.home-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(227, 227, 227);
+    min-height: 100vh;
+}
+
+.img-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 0 20px -5px rgba(0, 0, 0, 0.527);
+}
+
+.home-hero-img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.home-services,
+.home-results,
+.home-doctors {
+    width: 100%;
+    background: rgb(25, 25, 25);
+    background: linear-gradient(342deg, rgba(25, 25, 25, 1) 0%, rgba(31, 31, 31, 1) 50%, rgba(11, 11, 11, 1) 100%);
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 150px 0;
+}
+
+.home-results {
+    gap: 70px;
+    padding: 150px 0;
+}
+
+.home-doctors {
+    position: relative;
+    overflow: hidden;
+    background-position: center !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+}
+
+.home-doctors::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    filter: blur(20px);
+    z-index: 1;
+}
+
+.home-doctors::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(219deg, rgba(0, 0, 0, 0.3701855742296919) 0%, rgba(0, 0, 0, 0.7511379551820728) 31%, rgba(0, 0, 0, 0.44021358543417366) 53%, rgba(0, 0, 0, 0.7399334733893557) 74%, rgba(24, 24, 24, 0.17130602240896353) 100%) !important;
+    z-index: 2;
+    backdrop-filter: blur(6px) !important;
+}
+
+
+.sc-container {
+    width: 90%;
+    max-width: 1500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 70px;
+}
+
+.sc-container-2 {
+    width: 90% !important;
+    max-width: 1500px;
+}
+
+.sc-card {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 90%;
+    row-gap: 30px;
+    justify-content: center;
+    gap: 40px;
+}
+
+.sc-card>* {
+    max-height: clamp(250px, 23vw, 400px);
+}
+
+.sc-card-2>* {
+    max-height: clamp(300px, 50vw, 800px);
+}
+
+.sc-titles,
+.sc-titles>* {
+    width: 90%;
+    text-align: left;
+}
+
+.sc-t-c:hover>* {
+    transform: translateX(5px);
+}
+
+.sc-t-c-2:hover>* {
+    transform: translateX(0px);
+}
+
+.sc-t-c-2:hover>.sc-b-1 {
+    letter-spacing: 3px;
+}
+
+.sc-t-c>* {
+    width: fit-content;
+    line-height: 1;
+}
+
+.sc-t-c-2 {
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.my-buttonx {
+    padding: 0 50px !important;
+    font-size: clamp(1rem, 2vw, 1.5rem) !important;
+}
+
+.sc-t-1 {
+    font-size: clamp(1rem, 2vw, 3rem);
+}
+
+.sc-b-1 {
+    font-size: clamp(1rem, 2vw, 3rem);
+    font-style: normal !important;
+    /* uppercase */
+    text-transform: uppercase;
+}
+
+.sc-t-2 {
+    font-size: clamp(3rem, 5vw, 5rem);
+    letter-spacing: -2px;
+    margin-left: 5px;
+}
+
+.sc-b-2 {
+    font-size: clamp(3rem, 5vw, 5rem);
+    margin-left: 5px;
+    font-weight: 600;
+}
+
+.sc-t-3 {
+    font-size: clamp(3rem, 5vw, 5rem);
+    width: 100%;
+    text-align: center;
+}
+
+.sc-swiper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+}
+
+.sc-items {
+    width: 100%;
+    border-radius: 16px;
+}
+
+.sc-item-a {
+    background: red;
+}
+
+@media screen and (max-width: 1400px) {
+
+
+    .home-services,
+    .home-results,
+    .home-doctors {
+        padding: 8vw 0 !important;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+
+    .sc-titles,
+    .sc-titles>* {
+        width: fit-content;
+    }
+
+    .sc-t-c>* {
+        width: 100%;
+        text-align: center;
+        font-style: normal !important;
+        margin-left: 0px;
+
+    }
+
+    .sc-card>* {
+        max-height: fit-content;
+        max-width: 400px;
+    }
+
+    .sc-swiper {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .sc-card>* {
+        max-height: fit-content;
+        max-width: 100%;
+    }
+
+}
+
+@media screen and (min-width: 1500px) {
+
+    .sc-card>*:hover {
+        scale: 1.01;
+    }
+}

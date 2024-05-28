@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+@import 'header.css';
+@import 'home.css';
+@import 'utility.css';
+
+.font-inria-sans {
+  font-family: 'Inria Sans', sans-serif;
+}
+
+.p-no-dec > *, .no-dec {
+    text-decoration: none;
+    color: inherit;
+}
+
+.panimated > *, .animated {
+    transition: all 0.3s ease-in-out;
+}
+
+.panimated-card > *, .animated-card {
+    transition: scale 0.3s ease-out, filter 0.3s ease-out;
+    will-change: transform;
+}
+.panimated-swipe > *, .animated-swipe {
+    transition: filter 0.2s ease-out;
+}
+.dim {
+    filter: brightness(0.6);
+}
