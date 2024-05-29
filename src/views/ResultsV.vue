@@ -98,7 +98,6 @@
         },
         methods: {
             updateWidth() {
-                console.log(window.innerWidth)
                 this.screenWidth = window.innerWidth;
             },
             loadImage(folder, i) {
@@ -115,9 +114,6 @@
                             try {
                                 return require(`@/assets/results/${folder}/${i}.webp`);
                             } catch (err) {
-                                console.log(
-                                    `Failed to load image ${i}.jpeg from folder ${folder}, returning default image`
-                                );
                                 return require("@/assets/service/default.png");
                             }
                         }

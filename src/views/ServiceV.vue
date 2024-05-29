@@ -230,9 +230,7 @@
               try {
                 return require(`@/assets/service/${folder}/${i}.webp`);
               } catch (err) {
-                console.log(
-                  `Failed to load image ${i}.jpeg from folder ${folder}, returning default image`
-                );
+                
                 return require("@/assets/service/default.png");
               }
             }

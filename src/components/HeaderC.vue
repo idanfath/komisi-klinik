@@ -64,7 +64,6 @@
         }
       },
       tryPush(dest) {
-        console.log('tryPush', dest)
         this.mobileMenu = false
         if (dest === "contact") {
           this.scrollTo("footer")
