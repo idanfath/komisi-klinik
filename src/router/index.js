@@ -12,16 +12,27 @@ const routes = [
         component: () => import('../views/HomeV.vue'),
       },
       {
-        path: '/about', name: 'about',
-        component: () => import('../views/AboutV.vue'),
+        path: '/service', name: 'service',
+        component: () => import('../views/ServiceV.vue'),
       },
-    ]
+      {
+        path: '/results', name: 'results',
+        component: () => import('../views/ResultsV.vue'),
+      },
+    ],
   }
 ]
 
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
-  routes
+  routes,
+  //   scrollBehavior() {
+  //     document.getElementById('top').scrollIntoView();
+  // }
+  scrollBehavior() {
+    return { top: 0 }
+  }
+
 })
 
 export default router

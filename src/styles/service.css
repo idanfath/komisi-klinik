@@ -1,0 +1,47 @@
+.service-container {
+    width: 100% ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(18, 18, 18);
+    min-height: fit-content;
+}
+
+.service-hero-img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.tab-container {
+    background-color: #9c9c9c;
+    padding-top: 20px;
+    position: relative;
+    top: -20px;
+    min-height: fit-content;
+}
+
+
+.service-text {
+    color: white;
+    font-size: clamp(1rem, 5vw, 3rem);
+    padding: 5px;
+    font-weight: 600;
+    text-align: center;
+}
+.service-text > *:hover {
+    letter-spacing: 2px;
+}
+
+.service-title-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+@media screen and (max-width: 768px) {
+    .service-title-container {
+        padding: 20px;
+    padding-bottom: 25px;
+    }
+}

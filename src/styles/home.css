@@ -103,9 +103,8 @@
     max-height: clamp(300px, 50vw, 800px);
 }
 
-.sc-titles,
-.sc-titles>* {
-    width: 90%;
+.sc-titles{
+    width: 100%;
     text-align: left;
 }
 
@@ -117,10 +116,12 @@
     transform: translateX(0px);
 }
 
-.sc-t-c-2:hover>.sc-b-1 {
+.sc-t-c-2> *:hover > :first-child {
     letter-spacing: 3px;
 }
-
+.sc-t-c {
+    width: fit-content;
+}
 .sc-t-c>* {
     width: fit-content;
     line-height: 1;

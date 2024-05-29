@@ -1,9 +1,12 @@
 <template>
-  <q-layout view="HHH LpR fff">
+  <q-layout view="HHH LpR lff">
     <HeaderC class="font-inria-sans" />
     <FooterC class="font-inria-sans" />
+    <!-- ini mw inria apa inter -->
     <q-page-container class="font-inria-sans bg-black">
-      <router-view></router-view>
+        <router-view v-slot=" {Component}">
+            <component :is="Component" />
+        </router-view>
     </q-page-container>
   </q-layout>
   <CustomCursor class="gt-md" />
@@ -24,5 +27,10 @@
 </script>
 
 <style>
-
+/* .routerfade-enter-from, .routerfade-leave-to {
+  opacity: 0;
+}
+.routerfade-enter-active, .routerfade-leave-active {
+  transition: opacity 0.2s ease-out;
+} */
 </style>

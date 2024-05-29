@@ -3,6 +3,7 @@
 @import 'header.css';
 @import 'home.css';
 @import 'utility.css';
+@import 'service.css';
 
 .font-inria-sans {
   font-family: 'Inria Sans', sans-serif;

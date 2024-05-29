@@ -4,9 +4,9 @@
 </template>
 
 <style>
-  html {
+  /* html {
     scroll-behavior: smooth;
-  }
+  } */
 
   /* ubah warna seleksi teks ke invert */
   ::selection {
