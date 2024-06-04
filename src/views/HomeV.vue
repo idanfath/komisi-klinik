@@ -206,7 +206,7 @@ const ct_but2 = computed(() => {
             ref="but1R"
             :style="{ transform: ct_but1 }"
             :ripple="false"
-            @click="this.$router.push({ name: 'service' })"
+            @click="this.$router.push('/service')"
           ></q-btn>
         </div>
       </div>
@@ -275,7 +275,7 @@ const ct_but2 = computed(() => {
             ref="but2R"
             :style="{ transform: ct_but2 }"
             :ripple="false"
-            @click="this.$router.push({ name: 'results' })"
+            @click="this.$router.push('/results')"
           ></q-btn>
         </div>
       </div>
