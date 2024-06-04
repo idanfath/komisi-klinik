@@ -178,7 +178,7 @@ const cl_card3 = computed(() => {
             size="xl"
             v-motion-slide-visible-once-bottom
             square
-            :to={'/service'}
+            to="/service"
             class="my-buttonx animated-btn"
             :ripple="false"
             @click="tryPush('service')"
@@ -248,7 +248,7 @@ const cl_card3 = computed(() => {
             square
             class="q-py-sm q-px-xl animated-btn my-buttonx"
             :ripple="false"
-            :to={'/results'}
+            to="/results"
             @click="tryPush('results')"
           ></q-btn>
         </div>
