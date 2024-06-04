@@ -117,30 +117,6 @@ const cl_card3 = computed(() => {
     "rgba(0, 0, 0, 0.3)"
   );
 });
-
-const but1R = ref(null);
-const {
-  elementX: but1X,
-  elementY: but1Y,
-  elementHeight: but1H,
-  elementWidth: but1W,
-  isOutside: but1S,
-} = useMouseInElement(but1R);
-const ct_but1 = computed(() => {
-  return ct_construct(but1X, but1Y, but1H, but1W, but1S, 3);
-});
-
-const but2R = ref(null);
-const {
-  elementX: but2X,
-  elementY: but2Y,
-  elementHeight: but2H,
-  elementWidth: but2W,
-  isOutside: but2S,
-} = useMouseInElement(but2R);
-const ct_but2 = computed(() => {
-  return ct_construct(but2X, but2Y, but2H, but2W, but2S, 3);
-});
 </script>
 
 <template>
@@ -203,8 +179,6 @@ const ct_but2 = computed(() => {
             v-motion-slide-visible-once-bottom
             square
             class="my-buttonx animated-btn"
-            ref="but1R"
-            :style="{ transform: ct_but1 }"
             :ripple="false"
             @click="this.$router.push('/service')"
           ></q-btn>
@@ -272,8 +246,6 @@ const ct_but2 = computed(() => {
             v-motion-slide-visible-once-bottom
             square
             class="q-py-sm q-px-xl animated-btn my-buttonx"
-            ref="but2R"
-            :style="{ transform: ct_but2 }"
             :ripple="false"
             @click="this.$router.push('/results')"
           ></q-btn>
