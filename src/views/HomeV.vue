@@ -178,9 +178,10 @@ const cl_card3 = computed(() => {
             size="xl"
             v-motion-slide-visible-once-bottom
             square
+            :to={'/service'}
             class="my-buttonx animated-btn"
             :ripple="false"
-            @click="this.$router.push('/service')"
+            @click="tryPush('service')"
           ></q-btn>
         </div>
       </div>
@@ -247,7 +248,8 @@ const cl_card3 = computed(() => {
             square
             class="q-py-sm q-px-xl animated-btn my-buttonx"
             :ripple="false"
-            @click="this.$router.push('/results')"
+            :to={'/results'}
+            @click="tryPush('results')"
           ></q-btn>
         </div>
       </div>
@@ -307,6 +309,13 @@ export default {
     toggleMax() {
       this.max = this.max === -1 ? 1250 : -1;
     },
+    tryPush(dest) {
+        if (dest === "contact") {
+          this.scrollTo("footer")
+        } else {
+          this.$router.push({ name: dest })
+        }
+    }
   },
   computed: {
     slidesPerView() {
