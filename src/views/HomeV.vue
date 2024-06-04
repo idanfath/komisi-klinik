@@ -144,7 +144,7 @@ const ct_but2 = computed(() => {
 </script>
 
 <template>
-  <main class="home-container">
+  <main class="home-container v1-2">
     <div
       id="main-home"
       class="img-container"
