@@ -11,24 +11,25 @@
                 </div>
                 <div class="lt-sm q-mt-md row non-selectable" style="gap: 10px; font-size: 1.2rem">
                     <!-- social media logos -->
-                    <a :href="link.facebook" target="_blank" class="no-dec"><i class="fab fa-facebook"></i></a>
-                    <a :href="link.twitter" target="_blank" class="no-dec"><i class="fab fa-twitter"></i></a>
                     <a :href="link.instagram" target="_blank" class="no-dec"><i class="fab fa-instagram"></i></a>
+                    <a :href="link.address" target="_blank" class="no-dec"><i class="fas fa-map-marker-alt "/></a>
+                    
+
                 </div>
             </div>
             <div class="col-sm-4 col-lg-4 col-md-4 col-xl-4 col-xs-6 column gt-xs">
                 <div class="q-mb-md f-text-header">SOCIAL MEDIA</div>
                 <div class="column" style="gap: 4px">
-                    <a :href="link.instagram" target="_blank" class="no-dec">INSTAGRAM</a>
+                    <a :href="link.instagram" target="_blank" class="no-dec">@skynclinic.mks</a>
                     <div class="no-dec text-black">VMXK WAS HERE!!!!!</div>
                 </div>
             </div>
             <div class="col-sm-4 col-lg-4 col-md-4 col-xl-4 col-xs-6 column">
                 <div class="q-mb-md f-text-header">CONTACT US</div>
-                <div class="column" style="gap: 4px">
-                    <a :href="link.address" target="_blank" class="no-dec">ADDRESS</a>
-                    <a :href="link.instagram" target="_blank" class="no-dec">PHONE</a>
-                    <a :href="link.email" target="_blank" class="no-dec">EMAIL</a>
+                <div class="column" style="gap: 5px">
+                    <a :href="link.instagram" target="_blank" class="no-dec">+62 853-9982-9982</a>
+                    <a :href="link.instagram_2" target="_blank" class="no-dec">MANAGED BY @skynclinic.jkts</a>
+                    <a :href="link.address" target="_blank" class="no-dec gt-xs">Ruko Jasper 3 , Jl. Pengayoman, Masale Kec. Panakkukang, Kota Makassar</a>
                 </div>
             </div>
         </div>
@@ -50,6 +51,7 @@
                     facebook: "https://www.facebook.com/",
                     twitter: "https://twitter.com/",
                     instagram: "https://www.instagram.com/",
+                    instagram_2: "https://www.instagram.com/",
                     address: "https://goo.gl/maps/",
                     email: "mailto:" + "agus@testing.com"
                 },
